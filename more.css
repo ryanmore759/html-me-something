@@ -392,16 +392,3 @@ body {
   width: device-width ;
   zoom: 1.0 ;
 }
-/* If screen size is more than 600px wide, set the font-size of <div> to 80px */
-@media screen and (min-width: 600px) {
-  div.example {
-    font-size: 80px;
-  }
-}
-
-/* If screen size is 600px wide, or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
-  div.example {
-    font-size: 30px;
-  }
-}
