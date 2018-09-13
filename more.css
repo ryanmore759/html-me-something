@@ -8,7 +8,7 @@ height:100%;
 body{
 position:relative;
 height:100%;
-background:#fff0   font-family: 'Montserrat', sans-serif;
+background:#fff0   font-family; 'Montserrat', sans-serif;
 font-weight:400;
 }
 .navbox{
@@ -84,274 +84,8 @@ position:fixed;
 margin:0 auto;
 width:100px;
 }
-@-webkit-keyframes spincube{
-from,to {
-    -webkit-transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-}
 
-16% {
-    -webkit-transform:rotateY(-90deg)
-}
 
-33% {
-    -webkit-transform:rotateY(-90deg) rotateZ(90deg)
-}
-
-50% {
-    -webkit-transform:rotateY(-180deg) rotateZ(90deg)
-}
-
-66% {
-    -webkit-transform:rotateY(-270deg) rotateX(90deg)
-}
-
-83% {
-    -webkit-transform:rotateX(90deg)
-}
-}
-@keyframes spincube{
-from,to {
-    -moz-transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-    -ms-transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-    transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-}
-
-16% {
-    -moz-transform:rotateY(-90deg);
-    -ms-transform:rotateY(-90deg);
-    transform:rotateY(-90deg)
-}
-
-33% {
-    -moz-transform:rotateY(-90deg) rotateZ(90deg);
-    -ms-transform:rotateY(-90deg) rotateZ(90deg);
-    transform:rotateY(-90deg) rotateZ(90deg)
-}
-
-50% {
-    -moz-transform:rotateY(-180deg) rotateZ(90deg);
-    -ms-transform:rotateY(-180deg) rotateZ(90deg);
-    transform:rotateY(-180deg) rotateZ(90deg)
-}
-
-66% {
-    -moz-transform:rotateY(-270deg) rotateX(90deg);
-    -ms-transform:rotateY(-270deg) rotateX(90deg);
-    transform:rotateY(-270deg) rotateX(90deg)
-}
-
-83% {
-    -moz-transform:rotateX(90deg);
-    -ms-transform:rotateX(90deg);
-    transform:rotateX(90deg)
-}
-}
-.cubespinner{
-/*animation-name*/
--webkit-animation-name:spincube;
-   -moz-animation-name:spincube;
-    -ms-animation-name:spincube;
-     -o-animation-name:spincube;
-        animation-name:spincube;
-/*animation-timing-function*/
--webkit-animation-timing-function:ease-in-out;
-   -moz-animation-timing-function:ease-in-out;
-    -ms-animation-timing-function:ease-in-out;
-     -o-animation-timing-function:ease-in-out;
-        animation-timing-function:ease-in-out;
-/*animation-iteration-count*/
--webkit-animation-iteration-count:infinite;
-   -moz-animation-iteration-count:infinite;
-    -ms-animation-iteration-count:infinite;
-     -o-animation-iteration-count:infinite;
-        animation-iteration-count:infinite;
-/*animation-duration*/
--webkit-animation-duration:16s;
-   -moz-animation-duration:16s;
-    -ms-animation-duration:16s;
-     -o-animation-duration:16s;
-        animation-duration:16s;
-/*transform-style*/
--webkit-transform-style:preserve-3d;
-   -moz-transform-style:preserve-3d;
-    -ms-transform-style:preserve-3d;
-     -o-transform-style:preserve-3d;
-        transform-style:preserve-3d;
-/*transform-origin*/
--webkit-transform-origin:60px 60px 0;
-   -moz-transform-origin:60px 60px 0;
-    -ms-transform-origin:60px 60px 0;
-     -o-transform-origin:60px 60px 0;
-        transform-origin:60px 60px 0;
-}
-.cubespinner div{
-position:fixed;
-width:120px;
-height:120px;
-align:center;
-border:2.5px solid #eee;
-background:rgba(255,255,255,.8);
-/*box-shadow*/
--webkit-box-shadow:inset 0 0 20px rgba(0,0,0,.2);
-   -moz-box-shadow:inset 0 0 20px rgba(0,0,0,.2);
-        box-shadow:inset 0 0 20px rgba(0,0,0,.2);
-text-align:center;
-font-size:30px color: #000;
-}
-.cubespinner .face1{
-/*transform*/
--webkit-transform:translateZ(60px);
-   -moz-transform:translateZ(60px);
-    -ms-transform:translateZ(60px);
-     -o-transform:translateZ(60px);
-        transform:translateZ(60px);
-}
-.cubespinner .face2{
-/*transform*/
--webkit-transform:rotateY(90deg) translateZ(60px);
-   -moz-transform:rotateY(90deg) translateZ(60px);
-    -ms-transform:rotateY(90deg) translateZ(60px);
-     -o-transform:rotateY(90deg) translateZ(60px);
-        transform:rotateY(90deg) translateZ(60px);
-}
-.cubespinner .face3{
-/*transform*/
--webkit-transform:rotateY(90deg) rotateX(90deg) translateZ(60px);
-   -moz-transform:rotateY(90deg) rotateX(90deg) translateZ(60px);
-    -ms-transform:rotateY(90deg) rotateX(90deg) translateZ(60px);
-     -o-transform:rotateY(90deg) rotateX(90deg) translateZ(60px);
-        transform:rotateY(90deg) rotateX(90deg) translateZ(60px);
-}
-.cubespinner .face4{
-/*transform*/
--webkit-transform:rotateY(180deg) rotateZ(90deg) translateZ(60px);
-   -moz-transform:rotateY(180deg) rotateZ(90deg) translateZ(60px);
-    -ms-transform:rotateY(180deg) rotateZ(90deg) translateZ(60px);
-     -o-transform:rotateY(180deg) rotateZ(90deg) translateZ(60px);
-        transform:rotateY(180deg) rotateZ(90deg) translateZ(60px);
-}
-.cubespinner .face5{
-/*transform*/
--webkit-transform:rotateY(-90deg) rotateZ(90deg) translateZ(60px);
-   -moz-transform:rotateY(-90deg) rotateZ(90deg) translateZ(60px);
-    -ms-transform:rotateY(-90deg) rotateZ(90deg) translateZ(60px);
-     -o-transform:rotateY(-90deg) rotateZ(90deg) translateZ(60px);
-        transform:rotateY(-90deg) rotateZ(90deg) translateZ(60px);
-}
-.cubespinner .face6{
-/*transform*/
--webkit-transform:rotateX(-90deg) translateZ(60px);
-   -moz-transform:rotateX(-90deg) translateZ(60px);
-    -ms-transform:rotateX(-90deg) translateZ(60px);
-     -o-transform:rotateX(-90deg) translateZ(60px);
-        transform:rotateX(-90deg) translateZ(60px);
-}
-.sb-search {
-	position: relative;
-	margin-top: 10px;
-	width: 0%;
-	min-width: 60px;
-	height: 60px;
-	float: right;
-	overflow: hidden;
-
-	-webkit-transition: width 0.3s;
-	-moz-transition: width 0.3s;
-	transition: width 0.3s;
-
-	-webkit-backface-visibility: hidden;
-}
-.sb-search-input {
-	position: absolute;
-	top: 0;
-	right: 0;
-	border: none;
-	outline: none;
-	background: #fff;
-	width: 100%;
-	height: 60px;
-	margin: 0;
-	z-index: 10;
-	padding: 20px 65px 20px 20px;
-	font-family: inherit;
-	font-size: 20px;
-	color: #2c3e50;
-}
-
-input[type="search"].sb-search-input {
-	-webkit-appearance: none;
-	-webkit-border-radius: 0px;
-}
-.sb-search-input::-webkit-input-placeholder {
-	color: #efb480;
-}
-
-.sb-search-input:-moz-placeholder {
-	color: #efb480;
-}
-
-.sb-search-input::-moz-placeholder {
-	color: #efb480;
-}
-
-.sb-search-input:-ms-input-placeholder {
-	color: #efb480;
-}
-.sb-icon-search,
-.sb-search-submit  {
-	width: 60px;
-	height: 60px;
-	display: block;
-	position: absolute;
-	right: 0;
-	top: 0;
-	padding: 0;
-	margin: 0;
-	line-height: 60px;
-	text-align: center;
-	cursor: pointer;
-}
-.sb-search-submit {
-	background: #fff; /* IE needs this */
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
-    filter: alpha(opacity=0); /* IE 5-7 */
-    opacity: 0;
-	color: transparent;
-	border: none;
-	outline: none;
-	z-index: -1;
-}
-.sb-icon-search {
-	color: #fff;
-	background: #e67e22;
-	z-index: 90;
-	font-size: 22px;
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	-webkit-font-smoothing: antialiased;
-}
-
-.sb-icon-search:before {
-	content: "\e000";
-}
-.sb-search.sb-search-open,
-.no-js .sb-search {
-	width: 100%;
-}
-.sb-search.sb-search-open .sb-icon-search,
-.no-js .sb-search .sb-icon-search {
-	background: #da6d0d;
-	color: #fff;
-	z-index: 11;
-}
-.sb-search.sb-search-open .sb-search-submit,
-.no-js .sb-search .sb-search-submit {
-	z-index: 90;
-}
 body {
     background-color: #fff;  
    }
@@ -419,3 +153,55 @@ body {
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
 }
+/* carousel */
+#quote-carousel 
+{
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control
+{
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left 
+{
+  left: -12px;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right 
+{
+  right: -12px !important;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators 
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+
+
+.container > div {
+    flex: 1;
+
+}
+<div id="editor-js" class="playground-editor" style="height:500px;" itemprop="sampleType">// When the DOM is ready, run this function
+$(document).ready(function() {
+  //Set the carousel options
+  $(&#039;#quote-carousel&#039;).carousel({
+    pause: true,
+    interval: 4000,
+  });
+});</div>
+                </div>
+            </div>
+        </div>
+    </div>
